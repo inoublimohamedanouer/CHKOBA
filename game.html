@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHKOBA</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      body {
+        background-image: url("assets/images/Background.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      .table-container {
+        background-image: url("assets/images/Background/Background1.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        width: 70%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .score {
+        background-image: url("assets/images/Background/Background2.webp");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="marlboro">
+      <img src="assets/images/marlboro.png" alt="marlboro" />
+    </div>
+    <div class="coffee">
+      <img src="assets/images/coffee.png" alt="coffee">
+    </div>
+    <div class="chicha">
+      <img src="assets/images/chicha.png" alt="chicha">
+    </div>
+    <div class="score">
+      <table>
+        <tr>
+          <th colspan="2">Player</th>
+          <th colspan="2">Pc</th>
+        </tr>
+        <tr>
+          <td>Score</td>
+          <td id="score-player">0</td>
+          <td>Score</td>
+          <td id="score-pc">0</td>
+        </tr>
+        <tr>
+          <td colspan="4" id="end"></td>
+        </tr>
+      </table>
+      <a href="index.html" class="exit">exit</a>
+      <a href="#" class="next">next</a>
+    </div>
+    <div class="pc-container"></div>
+    <div class="table-container"></div>
+    <div class="player-container"></div>
+    <script src="assets/js/jQuery.js"></script>
+    <script src="assets/js/card.js"></script>
+    <script src="assets/js/setup.js"></script>
+    <script src="assets/js/methods.js"></script>
+    <script src="assets/js/events.js"></script>
+    <script src="assets/js/ai.js"></script>
+    <script src="assets/js/game.js"></script>
+  </body>
+</html>

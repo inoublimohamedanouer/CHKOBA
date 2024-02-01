@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.pc-container{
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 70%;
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+.player-container{
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 70%;
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    width: fit-content;
+    cursor: pointer;
+}
+.card img{
+    width: fit-content;
+}
+.triggered{
+    outline: 5px solid red;
+}
+img{
+    width: 400px;
+    height: 300px;
+}
+.marlboro, .coffee, .chicha{
+    position: relative;
+    z-index: 2;
+}
+.chicha{
+    width: 0;
+    height: 0;
+    left: 73%;
+    top: 45%;
+}
+.marlboro{
+    width: 15%;
+    height: 15%;
+    left: -5%;
+    top: 0;
+}
+.coffee{
+    width: 0%;
+    height: 0%;
+    left: -3%;
+    top: 45%;
+}
+.score{
+    position: relative;
+    left: 15%;
+    top: 5%;
+    width: 70%;
+    height: 70%;
+    z-index: 1;
+    visibility: hidden;
+}
+.next, .exit{
+position: relative;
+text-align: center;
+font-size: 40px;
+top: 40%;
+width: 20%;
+height: 10%;
+display: inline-block;
+  padding: 8px 12px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  background-color: #eee; 
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+.next{
+    left: 30%;
+}
+.exit{
+    left: 25%;
+}
+.next:hover, .exit:hover{
+    background-color: #ddd;
+}
+table{
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+}
+
+  
